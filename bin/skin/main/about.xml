@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="520,290" caption="0,0,0,50" mininfo="520,290" linkfontcolor="#FF1E91EC">
+  <Font name="Segoe UI" size="12" default="true"/>
+  <Font name="Segoe UI" size="14" />
+  <Font name="Segoe UI" size="16" bold="true" />
+  <VerticalLayout bkimage="file='main\bk2.png' corner='0 40 0 0'" bordercolor="#0xff454a4d" bordersize="1" inset="1,1,1,1">
+    <HorizontalLayout height="40" bkcolor="0xff2568da" >  
+      <Label text="TDCalendar" name="about_titetext" height="28" textpadding="6,12,0,0" align="left,vcenter" width="160" textcolor="0xffffffff"></Label>
+      <Control />
+      <HorizontalLayout width="31" inset="0 9 6 0">
+        <Button name="btn_closebtn" tooltip="关闭" width="22" height="22" normalimage="file='Common\sys_dlg_close.png' source='0,0,22,22'" hotimage="file='Common\sys_dlg_close.png' source='22,0,44,22'" pushedimage="file='Common\sys_dlg_close.png' source='44,0,66,22'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <Control height="60" />
+    <HorizontalLayout height="157" inset="30 0 50 0">
+      <VerticalLayout inset="0 20 0 0">
+        <Label text="TDCalendar日历" textcolor="#FF333333" font="2"/>
+        <Control height="60" />
+        <Label text="版本：" name="about_textVersion"  font="1"/>
+        <Control height="5" />
+        <Label text="反馈意见，请联系邮箱" font="0"/>
+      </VerticalLayout>
+      <Control width="138"  bkimage="main\c1.png" />
+    </HorizontalLayout>
+</VerticalLayout>
+</Window>

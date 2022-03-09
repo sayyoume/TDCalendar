@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="600,18" sizebox="4,4,6,6" caption="0,0,0,44" mininfo="600,18" bktrans="true">
+  <Font name="Segoe UI" size="13" bold="true" id="0"/>
+  <Font name="Segoe UI" size="13"  id="1"/>
+  <Font name="Segoe UI" size="16"  bold="true" id="2"/>
+  <Font name="Segoe UI" size="12"  default="true" id="3"/>
+  <VerticalLayout  name="rootvertical" bkimage="install\bk.png">
+    <Progress  name="page2_progress" height="14" min="0" max="100" value="15"  foreimage="file='install\progress_fore.png'  corner='2 2 15 2'"/>
+      <!--<HorizontalLayout >
+          <Control bkimage="file='install\progress_bk.png' corner='10,2,10,2'" float="true" pos="0,4,560,11"/>
+          <Progress  name="page2_progress" height="14" min="0" max="100" value="15"  foreimage="file='install\progress_fore.png'  corner='2 2 15 2'"/>
+      </HorizontalLayout> -->
+  </VerticalLayout>
+</Window>

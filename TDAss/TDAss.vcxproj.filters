@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\kernel32">
+      <UniqueIdentifier>{0a5e079d-228c-44fd-9e28-71ea03a9c1ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\zip">
+      <UniqueIdentifier>{708670d8-310c-48a8-a853-5aea8e64969e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ass.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmdline.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fileutils.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JLHelper.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JTerseUtilities.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OSVer.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel32\kernel_win.h">
+      <Filter>源文件\kernel32</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel32\ProcessTokenMgr.h">
+      <Filter>源文件\kernel32</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\unzip.h">
+      <Filter>源文件\zip</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fileutils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JTerseUtilities.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel32\kernel_win.cpp">
+      <Filter>源文件\kernel32</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel32\ProcessTokenMgr.cpp">
+      <Filter>源文件\kernel32</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\unzip.cpp">
+      <Filter>源文件\zip</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

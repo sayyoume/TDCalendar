@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="400,640" sizebox="4,4,6,6" caption="0,0,0,154" mininfo="400,640"  roundcorner="5,5">
+  <Font name="微软雅黑" size="12"  bold="false"/>
+  <Font name="微软雅黑" size="14"  bold="false"/>
+  <Font name="微软雅黑" size="16"  bold="true"/>
+  <Font name="微软雅黑" size="16"  bold="false"/>
+  <Font name="微软雅黑" size="18"  bold="false"/>
+  <Font name="微软雅黑" size="18"  bold="true"/>
+  <Font name="微软雅黑" size="30"  bold="false"/>
+  <Default name="VScrollBar" value="width=&quot;10&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='Scrollbars.png' source='0,0,10,12' corner='2,3,2,3'&quot; thumbhotimage=&quot;file='Scrollbars.png' source='0,0,10,12' corner='2,3,2,3'&quot; thumbpushedimage=&quot;file='Scrollbars.png' source='0,0,10,12' corner='2,3,2,3'&quot; bknormalimage=&quot;file='Scrollbars.png' source='0,12,10,24' corner='2,3,2,3'&quot; bkhotimage=&quot;file='Scrollbars.png' source='0,12,10,24' corner='2,3,2,3'&quot; bkpushedimage=&quot;file='Scrollbars.png' source='0,12,10,24' corner='2,3,2,3'&quot;" />
+  <VerticalLayout  name="rootvertical" bkimage="main\bk.png" bordersize="1" inset="1,0,1,0"  bordercolor="#ffcbd0d6" mouse="false">
+     <!--标题-->
+     <HorizontalLayout height="45" mouse="false" inset="4,0,5,0">
+         <LabelEx name="texttime" height="45" textpadding="6,12,0,0" align="left,vcenter" width="160" textcolor="0xfff4ffff" font="6" mouse="false" antialias="true"/>
+         <Control mouse="false"/>
+         <Control mouse="false"/>
+         <HorizontalLayout width="50" inset="0 9 0 0" mouse="false">
+           <Button visible="false" name="setbtn" width="20" tooltipid="455" height="20" normalimage="file='main\set.png' source='0,0,20,20'" hotimage="file='main\set.png' source='20,0,40,20'" pushedimage="file='main\set.png' source='40,0,60,20'"/>
+           <!--<Control width="5" />-->
+		   <Control />
+           <Button name="btnclose" width="20" tooltipid="191" height="20" normalimage="file='main\close.png' source='0,0,20,20'" hotimage="file='main\close.png' source='20,0,40,20'" pushedimage="file='main\close.png' source='40,0,60,20'"/>
+         </HorizontalLayout>
+      </HorizontalLayout>
+      <VerticalLayout height="120" inset="10 0 0 0" >
+        <Control height="70"/>
+        <Label name="textcalenter"  height="20"  width="150" textcolor="0xfff4ffff" font="1"/>
+        <Label name="textLunarcalenter"  height="20"  width="120" textcolor="0xfff4ffff" font="1"/>   
+      </VerticalLayout>
+      <!--页面1-->
+      <HorizontalLayout height="70" inset="10 10 0 0" >
+          <Button name="btn_left" width="20" height="24" text="&lt;" textcolor="#ff000000" normalimage="file='main\todayButton.png' source='0,0,75,24' corner='2,2,2,2'" hotimage="file='main\todayButton.png' source='75,0,150,24' corner='2,2,2,2'" pushedimage="file='main\todayButton.png' source='150,0,225,24' corner='2,2,2,2'" />
+          <Control width="5"/>
+          <ComboEx name="comboyear" normalimage="file='main\combo.png' source='0,0,80,25'" hotimage="file='main\combo.png' source='80,0,160,25'" pushedimage="file='main\combo.png' source='80,0,160,25'" textpadding="0,1,1,1" width="80" height="25"  />
+          <Control width="5" />
+          <ComboEx name="combomonth" normalimage="file='main\combo1.png' source='0,0,50,25'" hotimage="file='main\combo1.png' source='50,0,100,25'" pushedimage="file='main\combo1.png' source='50,0,100,25'" textpadding="0,1,1,1" width="50" height="25" />
+          <Control width="5"/>
+          <Button name="btn_right" width="20" height="24" text="&gt;" textcolor="#ff000000" normalimage="file='main\todayButton.png' source='0,0,75,24' corner='2,2,2,2'" hotimage="file='main\todayButton.png' source='75,0,150,24' corner='2,2,2,2'" pushedimage="file='main\todayButton.png' source='150,0,225,24' corner='2,2,2,2'" />
+          <Control width="70" />
+          <Button name="btntoday" width="75" height="24" text="今天" textcolor="#ff000000" normalimage="file='main\todayButton.png' source='0,0,75,24'" hotimage="file='main\todayButton.png' source='75,0,150,24'" pushedimage="file='main\todayButton.png' source='150,0,225,24'" disabledimage="file='main\todayButton.png' source='150,0,225,24'"/>
+          <Edit name="year_edit" autohscroll="true" float="true" pos="12,12,70,33" textpadding="25,1,1,1"  textcolor="0xffffffff" />
+      </HorizontalLayout>
+      <VerticalLayout inset="5 0 0 0">
+        <HorizontalLayout inset="15 0 5 0" height="40">
+          <Label text="日" height="28"  width="48" textcolor="0xffff0000" font="3"/>
+          <Label text="一" height="28"  width="48" textcolor="0xff000000" font="3"/>
+          <Label text="二" height="28"  width="48" textcolor="0xff000000" font="3"/>
+          <Label text="三" height="28"  width="48" textcolor="0xff000000" font="3"/>
+          <Label text="四" height="28"  width="48" textcolor="0xff000000" font="3"/>
+          <Label text="五" height="28"  width="48" textcolor="0xff000000" font="3"/>
+          <Label text="六" height="28"  width="48" textcolor="0xffff0000" font="3"/>
+        </HorizontalLayout>
+        <!--第一行-->
+        <HorizontalLayout height="50">
+          <OptionEx name="option_select_0_0"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label name="text_0_0"   align="hcenter,vcenter" height="17" mouse="false"/>
+              <Label name="textyinli_0_0"   align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_0_1"  group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label name="text_0_1"   align="hcenter,vcenter" height="17" mouse="false"/>
+              <Label name="textyinli_0_1"  align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_0_2"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+           <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+             <Label name="text_0_2"   align="hcenter,vcenter" height="17" mouse="false"/>
+             <Label name="textyinli_0_2"   align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+           </VerticalLayout>
+         </OptionEx>
+          <OptionEx name="option_select_0_3"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+           <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+             <Label name="text_0_3"  font="1" align="hcenter,vcenter" height="17" mouse="false"/>
+             <Label name="textyinli_0_3"  font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+           </VerticalLayout>
+         </OptionEx>
+          <OptionEx name="option_select_0_4"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+           <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+             <Label name="text_0_4" font="1" align="hcenter,vcenter" height="17" mouse="false"/>
+             <Label name="textyinli_0_4"  font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+           </VerticalLayout>
+         </OptionEx>
+          <OptionEx name="option_select_0_5"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+           <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+             <Label name="text_0_5"   align="hcenter,vcenter" height="17" mouse="false"/>
+             <Label name="textyinli_0_5"   align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+           </VerticalLayout>
+         </OptionEx>
+          <OptionEx name="option_select_0_6"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+           <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+             <Label name="text_0_6"   align="hcenter,vcenter" height="17" mouse="false"/>
+             <Label name="textyinli_0_6"   align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+           </VerticalLayout>
+         </OptionEx>
+         <Control width="10"/>
+         <Label name="label_0" text="第11周"/>
+        </HorizontalLayout>
+        <!--第二行-->
+        <HorizontalLayout height="50">
+          <OptionEx name="option_select_1_0"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_1_0" font="1" align="hcenter,vcenter" height="17" mouse="false"/>
+              <Label  name="textyinli_1_0" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_1_1"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_1_1" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_1_1" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_1_2"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_1_2" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_1_2" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_1_3"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_1_3" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_1_3" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_1_4"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_1_4" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_1_4" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_1_5"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_1_5" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_1_5" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_1_6"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="3" name="text_1_6" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="1" name="textyinli_1_6" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <Control width="10"/>
+          <Label name="label_1" text="第11周"/>
+        </HorizontalLayout>
+        <!--第三行-->
+        <HorizontalLayout height="50">
+          <OptionEx name="option_select_2_0"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_2_0" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_2_0" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_2_1"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_2_1" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_2_1" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_2_2"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_2_2" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_2_2" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_2_3"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_2_3" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_2_3" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_2_4"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_2_4" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_2_4" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_2_5"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_2_5" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_2_5" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_2_6"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_2_6" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_2_6" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <Control width="10"/>
+          <Label name="label_2" text="第11周"/>
+        </HorizontalLayout>
+        <!--第四行-->
+        <HorizontalLayout height="50">
+          <OptionEx name="option_select_3_0"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_3_0" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_3_0" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_3_1"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_3_1" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_3_1" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_3_2"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_3_2" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_3_2" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_3_3"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  name="text_3_3" font="1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_3_3" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_3_4"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_3_4" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_3_4" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_3_5"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_3_5" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_3_5" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_3_6"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3 " mouse="false">
+              <Label  font="1" name="text_3_6" align="hcenter,top" height="17" mouse="false"/>
+              <Label  name="textyinli_3_6" font="2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <Control width="10"/>
+          <Label name="label_3" text="第11周"/>
+        </HorizontalLayout>
+        <!--第五行-->
+        <HorizontalLayout height="50">
+          <OptionEx name="option_select_4_0"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_4_0" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_4_0" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_4_1"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_4_1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_4_1" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_4_2"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_4_2" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_4_2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_4_3"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_4_3" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_4_3" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_4_4"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_4_4" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_4_4" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_4_5"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_4_5" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_4_5" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_4_6"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_4_6" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_4_6" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <Control width="10"/>
+          <Label name="label_4" text="第11周"/>
+        </HorizontalLayout>
+        <!--第六行-->
+        <HorizontalLayout height="50">
+          <OptionEx name="option_select_5_0"   group="caldrtime1" width="48" height="50" normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_5_0" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2" name="textyinli_5_0" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_5_1"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_5_1" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2"  name="textyinli_5_1" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"/>
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_5_2"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_5_2" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2"  name="textyinli_5_2" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false" />
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_5_3"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_5_3" align="hcenter,top" height="17" mouse="false"/>
+              <Label  font="2"  name="textyinli_5_3" align="hcenter,bottom" textcolor="#ff333333"  height="22" mouse="false"  />
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_5_4"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_5_4" align="hcenter,top" height="22" mouse="false" />
+              <Label  font="2"  name="textyinli_5_4" align="hcenter,top" textcolor="#ff333333"  height="22" mouse="false" />
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_5_5"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_5_5" align="hcenter,top" height="22" mouse="false"/>
+              <Label  font="2"  name="textyinli_5_5" align="hcenter,top" textcolor="#ff333333"  height="22" mouse="false" />
+            </VerticalLayout>
+          </OptionEx>
+          <OptionEx name="option_select_5_6"   group="caldrtime1" width="48" height="50"  normalimage="file='main\cadrbk.png' source='0,0,48,50'" hotimage="file='main\cadrbk.png' source='0,0,48,50'" selectedimage="file='select.png' source='0,0,48,50'" disabledimage="file='select.png' source='0,0,48,50'">
+            <VerticalLayout name="subcontrol_ver" inset="0 10 0 3" mouse="false">
+              <Label  font="1" name="text_5_6" align="hcenter,top" height="22" mouse="false" />
+              <Label  font="2"  name="textyinli_5_6" align="hcenter,top" textcolor="#ff333333"  height="22" mouse="false" />
+            </VerticalLayout>
+          </OptionEx>
+          <Control width="10"/>
+          <Label name="label_5" text="第11周" textcolor="#ff333333"/>
+        </HorizontalLayout>
+      </VerticalLayout>
+      <Control height="10"/>
+      <HorizontalLayout height="40" inset="10,5,0,5">
+           <Button name="btn_calc" width="40" height="30" text="计算器" textcolor="#ff000000" normalimage="file='main\todayButton.png' source='0,0,75,24' corner='2,2,2,2'" hotimage="file='main\todayButton.png' source='75,0,150,24' corner='2,2,2,2'" pushedimage="file='main\todayButton.png' source='150,0,225,24' corner='2,2,2,2'" />
+           <Control width="5"/>
+           <Button name="btn_jd" width="40" height="30" text="京东" textcolor="#ff000000" normalimage="file='main\todayButton.png' source='0,0,75,24' corner='2,2,2,2'" hotimage="file='main\todayButton.png' source='75,0,150,24' corner='2,2,2,2'" pushedimage="file='main\todayButton.png' source='150,0,225,24' corner='2,2,2,2'" />
+           <Control width="5"/>
+           <Button name="btn_tb" width="40" height="30" text="淘宝" textcolor="#ff000000" normalimage="file='main\todayButton.png' source='0,0,75,24' corner='2,2,2,2'" hotimage="file='main\todayButton.png' source='75,0,150,24' corner='2,2,2,2'" pushedimage="file='main\todayButton.png' source='150,0,225,24' corner='2,2,2,2'" />
+           <Control width="5"/>
+           <Button name="btn_tm" width="40" height="30" text="天猫" textcolor="#ff000000" normalimage="file='main\todayButton.png' source='0,0,75,24' corner='2,2,2,2'" hotimage="file='main\todayButton.png' source='75,0,150,24' corner='2,2,2,2'" pushedimage="file='main\todayButton.png' source='150,0,225,24' corner='2,2,2,2'" />
+           <Control width="5"/>
+           <Button name="btn_12306" width="40" height="30" text="12306" textcolor="#ff000000" normalimage="file='main\todayButton.png' source='0,0,75,24' corner='2,2,2,2'" hotimage="file='main\todayButton.png' source='75,0,150,24' corner='2,2,2,2'" pushedimage="file='main\todayButton.png' source='150,0,225,24' corner='2,2,2,2'" />
+           <Control width="5"/>
+      </HorizontalLayout>
+      <Control height="15"/>
+   </VerticalLayout>
+</Window>

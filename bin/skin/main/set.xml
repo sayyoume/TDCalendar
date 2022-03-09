@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window  caption="0,0,0,50" mininfo="129,40" roundcorner="1,1" layeredimage="file='setbk.png' corner='5,20,5,5'">
+  <Font name="微软雅黑" size="12" default="true" id="0"/>
+  <VerticalLayout >
+  	<Control height="10"/>
+  	<HorizontalLayout name="horziont_set" height="24" mouse="true">
+  		<Button name="btn_set" hotimage="file='menu_set.png' corner='17,0,0,0' dest='10,5,28,23'" normalimage="file='menu_set.png' corner='17,0,0,0' dest='10,5,28,23'" textid="137" textcolor="0xfe000000" />
+  	</HorizontalLayout>
+  	<HorizontalLayout name="horziont_update" height="24" mouse="true">
+  		<Button name="btn_update" hotimage="file='menu_update.png' corner='17,0,0,0' dest='10,5,28,23'" normalimage="file='menu_update.png' corner='17,0,0,0' dest='10,5,28,23'" textid="156" textcolor="0xfe000000" />
+  	</HorizontalLayout>
+  	 <HorizontalLayout name="horziont_help" height="24"  mouse="true">
+  		<Button name="btn_help" normalimage="file='menu_help.png' corner='17,0,0,0' dest='10,5,28,23'" hotimage="file='menu_help.png' corner='17,0,0,0' dest='10,5,28,23'"  textid="139" textcolor="0xfe000000" />
+  	</HorizontalLayout>
+  	 <HorizontalLayout name="horziont_about" height="24"  mouse="true">
+  		<Button name="btn_about" normalimage="file='menu_about.png' corner='17,0,0,0' dest='10,5,28,23'" hotimage="file='menu_about.png' corner='17,0,0,0' dest='10,5,28,23'"  textid="140" textcolor="0xfe000000" />
+  	</HorizontalLayout>  	
+  </VerticalLayout>
+</Window>
